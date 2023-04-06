@@ -13,7 +13,7 @@
 <body>
     <!--vavegacion-->
    
-    <nav class="navbar navbar-expand-lg  barra  sticky-sm-top" >
+    <nav  class="navbar navbar-expand-lg  barra  sticky-sm-top" >
       <div class="container-fluid" >
         <a class="navbar-brand" href="#inicio">INICIO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
   
   
 
-<main class="container-fluid col-s" id="inicio" >
+<main class="container-fluid col-s"   id="inicio" >
 <div class="mt-5"></div>
     <!--letras izq-->
     <div class="row mt-5 col-s">
@@ -47,9 +47,7 @@
       
         <div class="portada ">
                 <div class="row empresa">
-                    <p class="empresa">Argentine</p>
-                      <p> Space</p>
-                      <p> Flights</p>
+                    <p class="empresa">Argentine Space Flights</p>
                 </div>
                 <div class="row">
                     <div class="taxi">
@@ -145,7 +143,7 @@
               <div class="row" >
                <div class="mb-5">
                 <button type="bottom-0" id="anterior"  class="btn btn-primary">Anterior</button>
-                <button type="submit"  id="enviar" class="btn btn-primary">Enviar</button>
+                <button type="submit"  id="enviar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
                      </div>
                    </div>
              </form>
@@ -173,7 +171,7 @@
     <p class="nos">Argentine Space Flights</p>
   </div>
   <div class="row mb-5">
-    <p class="no">Somos una empresa Argentina dedicada a los vuelos al espacio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi consequuntur architecto culpa corrupti necessitatibus sapiente quidem similique porro veniam. Laboriosam quia dolorum molestiae impedit natus mollitia inventore voluptas rerum.</p>
+    <p class="no">Somos una empresa Argentina dedicada a los vuelos al espacio. Somos la primer empresa de Argentina en hacer viajes al espacio. Contamos con el 9% de viajes exitosos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum, a consequuntur dolor possimus itaque ab qui nemo illum odit ipsum error quibusdam optio blanditiis asperiores minima alias architecto quisquam.</p>
   </div>
 </div>
 </div>
@@ -237,6 +235,31 @@
 
 </div>
 </div>
+<!-- este es el modal-->
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PRESUPUESTO:</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div    class="modal-body">
+        <textarea type="text" name="comentario" id="comentario" rows="5" cols="60"> 
+        </textarea>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
 <footer>
   <p>Este es el trabajo integrador del Grupo 10</p>
 </footer>
