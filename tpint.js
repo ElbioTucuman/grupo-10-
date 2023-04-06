@@ -21,8 +21,7 @@ const enviar = document.getElementById("enviar");
 
 const formu1=document.getElementById("form1");
 const formu2=document.getElementById("form2");
-const fo1=document.getElementsByClassName("form1");
-const fo2=document.getElementsByClassName("form2");
+
 
 function envi(e){
     e.preventDefault();
@@ -39,8 +38,8 @@ function envi(e){
     mensaje=mensaje.concat(nom.value + " "+apel.value +", con tel nro "+tele.value+", y email: "+emai.value+", del pais "+pai.value+", de la ciudad "+ciud.value);
     mensaje=mensaje.concat(", su presupusto es U$S "+presupuesto);
     document.getElementById("comentario").value = mensaje;
-    fo1.reset();
-    fo2.reset();
+    document.getElementsByClassName("form1").reset;
+    document.getElementsByClassName("form2").reset;
     formu2.classList.add("d-none");
     formu1.classList.remove("d-none");
 }
@@ -51,7 +50,7 @@ function sig(e){
     e.preventDefault();
 formu1.classList.add("d-none");
 formu2.classList.remove("d-none");
-console.log("chau");
+
 
 }
 
