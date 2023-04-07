@@ -38,8 +38,17 @@ function envi(e){
     mensaje=mensaje.concat(nom.value + " "+apel.value +", con tel nro "+tele.value+", y email: "+emai.value+", del pais "+pai.value+", de la ciudad "+ciud.value);
     mensaje=mensaje.concat(", su presupusto es U$S "+presupuesto);
     document.getElementById("comentario").value = mensaje;
-    document.getElementsByClassName("form1").reset;
-    document.getElementsByClassName("form2").reset;
+
+    nom.value="";
+    apel.value="";
+    tele.value="";
+    emai.value="";
+    pai.value="";
+    ciud.value="";
+    adult.value="";
+    nin.value="";
+
+
     formu2.classList.add("d-none");
     formu1.classList.remove("d-none");
 }
