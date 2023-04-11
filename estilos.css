@@ -89,14 +89,17 @@ main {
 #nosotros {
     background-color: rgba(216, 216, 250, 0.658);
     border: 2px;
+
 }
 .nosotros {
+    
     
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     color: blue;
 }
+.cuadro { border: 1px rgb(255, 0, 76) dotted; padding: 10px 5px; }
 
 .nor {
     font-size: 3vw;
